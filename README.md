@@ -38,24 +38,11 @@ So, in a way of final comment, I recommend the use of Deep Learning for
 solving situations like these, but I have knowledege of Machine Learning, as well 
 as methods of Optimization, such as:
 
-Blind Search
-    Full Blind Search
-    Grid Search
-    Monte Carlo Search
-Local Search
-    Hill Climbing
-    Simulated Annealing}
-    Tabu Search
-Population Based Search
-    Genetic and Evolutionary Algorithms
-    Differential Evolution
-    Particle Swarm Optimization
-    Estimation of Distribution Algorithm
-    Comparison of Population Besed Methods
-    Bag Prices with Constraint
-    Genetic Programming
-Multi-Objetive Optimization
-    Weighted-Formula Approach
-    Lexicographic Approach
-    Pareto Approach
+Blind Search: Full Blind Search, Grid Search, Monte Carlo Search
+
+Local Search: Hill Climbing, Simulated Annealing, Tabu Search
+
+Population Based Search: Genetic and Evolutionary Algorithms, Differential Evolution, Particle Swarm Optimization, Estimation of Distribution Algorithm, Comparison of Population Besed Methods, Bag Prices with Constraint, Genetic Programming
+
+Multi-Objetive Optimization: Weighted-Formula Approach, Lexicographic Approach, Pareto Approach
 
