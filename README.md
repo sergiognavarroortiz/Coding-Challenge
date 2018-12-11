@@ -8,8 +8,8 @@ Since this problem didn´t include real data, this code won´t run as is.  Code 
 
 # Requirements
 
-- RStudio 1.1.1442  https://www.rstudio.com/products/rstudio/download/#download
-- R compiler 3.5.1  https://cran.r-project.org/mirrors.html
+- RStudio 1.1.1442    https://www.rstudio.com/products/rstudio/download/#download
+- R compiler 3.5.1    https://cran.r-project.org/mirrors.html
 
 This code was run in Windows 10 Home Single Language 
 https://www.microsoft.com/en-us/windows
