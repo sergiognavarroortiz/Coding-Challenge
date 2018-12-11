@@ -1,6 +1,6 @@
-######################
-# Solucion problema 1#
-######################
+#######################
+# Solucion problema 1 #
+#######################
 
 #Cargar Data
 library(readxl)
