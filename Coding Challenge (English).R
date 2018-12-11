@@ -4,6 +4,8 @@
 
 #Load Data
 library(readxl)
+data <- read_excel("~/TRABAJO/USA/Examen final/Data ejemplo.xlsx", 
+                           sheet = "Entrenamiento")
 data <- read_excel("Here is the location of the file.xlsx")
 View(data)
 
@@ -63,7 +65,7 @@ data$CPE<-as.numeric(data$CPE)  #Pretreated to eliminate $ values
 
 #I suspect that variables Preview_Image, Geo_Targeting, Language_Targeting, OS_Targeting,Lifetime_Clicks y Lifetime_Engagements
 #only contain a value, if it is correct those columns will be eliminated, since
-#this valu wonn´t help me for prediction of those variables "Available metrics at lineitem level"
+#this value won´t help me for prediction of those variables "Available metrics at lineitem level"
 
 #Determining if variables Preview_Image, Geo_Targeting, Language_Targeting, OS_Targeting, Lifetime_Clicks y 
 #Lifetime_Engagements contain only one value
@@ -114,7 +116,7 @@ chisq.test(table_Age_CID)
 chisq.test(table_Age_Device)
 
 #Next we will be able to determine the correlation degree of variables, in order to
-#determine if variables will be good for predcition of unknown metrics.
+#determine if variables will be good for prediction of unknown metrics.
 
 #########################################################################
 # Deep Neural Networks (deep learning) for prediction of unknown metrics#
