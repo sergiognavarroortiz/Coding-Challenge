@@ -4,8 +4,6 @@
 
 #Load Data
 library(readxl)
-data <- read_excel("~/TRABAJO/USA/Examen final/Data ejemplo.xlsx", 
-                           sheet = "Entrenamiento")
 data <- read_excel("Here is the location of the file.xlsx")
 View(data)
 
