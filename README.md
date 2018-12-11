@@ -1,6 +1,8 @@
 # Coding-Challenge
 Codes of Deep Learning and Optimization
 
+This file i recommend to run it in RStudio 3.5.1 using Windows 10
+
 The following code contains the solution to the problem called
 "Smart Exploration Problem", this problem was solved with R.
 
