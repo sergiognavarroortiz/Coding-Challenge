@@ -20,12 +20,12 @@ Initially, I made an Exploratory Analysis, where it was found that the  variable
 
 ## Prediction Model with Deep Neural Networks (Deep Learning)
 
-The next step was to create a Model of Prediction the Deep Neural Networks (Deep Learning), stariting this phase with the normalization of data in order  to have a precise Prediction. In this section it was specified some values commonly used y some other the depend of the experience of programmer, such as the hidden layers and number of neurons per hidden layer.
+The next step was to create a Model of Prediction the Deep Neural Networks (Deep Learning), starting this phase with the normalization of data in order  to have a precise Prediction. In this section it was specified some values commonly used y some other the depend of the experience of programmer, such as the hidden layers and number of neurons per hidden layer.
 
 
 ## Optimization of the Model
 
-Finally, with the already predicted values, I started the last phase, which is the Optimization of the Model, where the goal was to minimze the value of CPE considering the rest of variables, somo of them categorical and some other numeric. For this process I used Genetic Algorithm with a Linear Regression  Function. I have to note, that this process is just illustrative, since no real data was given to me. therefore, to find the most adequate function was hypothetical, let´s note that some other algorithms will work better, but  always it must be considered the nature of each dataset provided. But this code is a good example of solution for a real situation.
+Finally, with the already predicted values, I started the last phase, which is the Optimization of the Model, where the goal was to minimze the value of CPE considering the rest of variables, somo of them categorical and some other numeric. For this process I used a Genetic Algorithm with a Linear Regression  Function. I have to note, that this process is just illustrative, since no real data was given to me. therefore, to find the most adequate function was hypothetical, let´s note that some other algorithms will work better, but  always it must be considered the nature of each dataset provided. But this code is a good example of solution for a real situation.
 
 
 # Finals comments
