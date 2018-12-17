@@ -28,6 +28,6 @@ The next step was to create a Model of Prediction the Deep Neural Networks (Deep
 Finally, with the already predicted values, I started the last phase, which is the Optimization of the Model, where the goal was to minimze the value of CPE considering the rest of variables, somo of them categorical and some other numeric. For this process I used a Genetic Algorithm with a Linear Regression  Function. I have to note, that this process is just illustrative, since no real data was given to me. therefore, to find the most adequate function was hypothetical, let´s note that some other algorithms will work better, but  always it must be considered the nature of each dataset provided. But this code is a good example of solution for a real situation.
 
 
-# Finals comments
+# Final comments
 I recommend the use of Deep Learning for solving situations like these, since that I am using Deep Learning, it can be mixed categorical variables and numeric variables for Prediction purposes and considering the power that Deep Learning has for Prediction of variables. The Optimization methods could be used for many objectives and approaches, but considering that real data wasn´t provided, I used an algorithm that can show clearly the methodology for solving this problem, but this method is not in any way, the solution for every case.
 
