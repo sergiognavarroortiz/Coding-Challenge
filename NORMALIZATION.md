@@ -3,7 +3,7 @@ Indeed, it doesn´t exist strict rules on how normalize attributes.  The simples
 
 Zi=(xi-xp)/σx 
 
-$\frac{x^2+1}{x-1}$
+$\frac{x^2+1}{x-1}$.
 
 This procedure is often the first stage, when I apply traditional statistical models. It makes sure that the observations have an average of 0 and a standard deviation of 1. Not always, like it happens to many things in Deep Learning, will give good results all the time, therefore, there are some alternatives; here, I will show two popular options:
 
