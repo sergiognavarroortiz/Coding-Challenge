@@ -40,7 +40,7 @@ class(data$Lifetime_Clicks)
 class(data$Lifetime_Engagements)
 class(data$CPE)
 
-#Conversion to the correct class of variables (in case R didn´t do it)
+#Conversion to the correct class of variables (in case R didnÂ´t do it)
 data$LineItemID<-as.factor(data$LineItemID)
 data$ContentUrl<-as.factor(data$ContentUrl)
 data$CampaignID<-as.factor(data$CampaignID)
@@ -63,7 +63,7 @@ data$CPE<-as.numeric(data$CPE)  #Pretreated to eliminate $ values
 
 #I suspect that variables Preview_Image, Geo_Targeting, Language_Targeting, OS_Targeting,Lifetime_Clicks y Lifetime_Engagements
 #only contain a value, if it is correct those columns will be eliminated, since
-#this value won´t help me for prediction of those variables "Available metrics at lineitem level"
+#this value wonÂ´t help me for prediction of those variables "Available metrics at lineitem level"
 
 #Determining if variables Preview_Image, Geo_Targeting, Language_Targeting, OS_Targeting, Lifetime_Clicks y 
 #Lifetime_Engagements contain only one value
@@ -81,7 +81,7 @@ range(data$Lifetime_Engagements)
 #while last 2 variables are good for prediction, therefore, I think that these variables should have 
 #different numeric values.
 
-#Erasing variables that aren´t good for prediction
+#Erasing variables that arenÂ´t good for prediction
 library(dplyr)
 data <- select(data, -Preview_Image, -Geo_Targeting, -Language_Targeting, -OS_Targeting)
 
@@ -116,9 +116,9 @@ chisq.test(table_Age_Device)
 #Next we will be able to determine the correlation degree of variables, in order to
 #determine if variables will be good for prediction of unknown metrics.
 
-#########################################################################
-# Deep Neural Networks (deep learning) for prediction of unknown metrics#
-#########################################################################
+##########################################################################
+# Deep Neural Networks (deep learning) for prediction of unknown metrics #
+##########################################################################
 
 #The process shown here must be done including all prediction variables (Metrics unknown),
 #The first variable to predict must be the one which more correlation, compared with rest of known 
@@ -134,10 +134,8 @@ hist(data$CPE ,col = "red",xlab = "Histograma de CPE")
 
 #Conversion of attributes to factors
 require(nnet)
-LineItemID<-class.ind(data$LineItemID)   #Extract the attribute of dataset and create a matrix 
-#of each categorical variable
-colnames(LineItemID)=c("lid1","lid2","lid3",.......,"lid30000000")   #Adding to a numeric value 
-# a label what it means their factor value
+LineItemID<-class.ind(data$LineItemID)   #Extract the attribute of dataset and create a matrix of each categorical variable
+colnames(LineItemID)=c("lid1","lid2","lid3",.......,"lid30000000")   #Adding to a numeric value a label what it means their factor value
 head(LineItemID)
 
 ContentUrl<-class.ind(data$ContentUrl)   
@@ -210,8 +208,7 @@ rand_seed=2018
 set.seed(rand_seed)
 train<-sample(1:nrow(data),"number of adequate data for training",FALSE)
 
-#Funcion para poder aderir todas las variables para poder realizar el ajuste
-
+#Function to adhere all the variables and make the adjustment
 formu<-function(y_label,x_labels){
   as.formula(sprintf("%s~%s",y_label,
                      paste(x_labels,collapse = "+")))
@@ -272,7 +269,7 @@ round(cor(pred_testn,y_test),4)
 ######################
 
 #The methods of optimization to solve this Coding Challenge
-#Since we don´t have real data. I will use Genetic Algorithm with Linear Regression to show you 
+#Since we donÂ´t have real data. I will use Genetic Algorithm with Linear Regression to show you 
 
 #Categorical Variables Conversion to numeric
 data$LineItemID<-as.numeric(data$LineItemID)
@@ -288,7 +285,7 @@ data$Device_Targeting<-as.numeric(data$Device_Targeting)
 data$Interest_Targeting<-as.numeric(data$Interest_Targeting)
 
 #Adjust Function for our Genetic Algorithm 
-CPE<-function(data,b0,b1,b2,b3){
+CPE<-function(data,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14){
   attach(data,warn.conflicts = F)
   Y_hat<-b0+b1*LineItemID+b2*ContentUrl+b3*CampaignID+b4*StoryID+b5*Channel+b6*Preview_Headline+b7*Channel_Ad_ID+b8*Gender_Targeting+b9*Age_Targeting+b10*Device_Targeting+b11*Interest_Targeting+b12*Lifetime_Spend+b13*Lifetime_Clicks+b14*Lifetime_Engagements
   SSE=t(CPE-Y_hat) %*% (CPE-Y_hat)
@@ -298,7 +295,7 @@ CPE<-function(data,b0,b1,b2,b3){
 
 #Genetic Algorithm
 library(genalg)
-ga.CPE<-ga(type='real-valued',min(1,1,1,1,1,1,1,1,1,1,1,45,1000,500,0.09),   #Los vlores son supuestos, tomados de los datos con los que se contaba como ejemplo
+ga.CPE<-ga(type='real-valued',min(1,1,1,1,1,1,1,1,1,1,1,45,1000,500,0.09),   #The values are assumptions, taken from the data with which we have as an example
            max=c(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n),popSize=n,maxiter=n,
            names=c('intercept','LineItemID','ContentUrl','CampaignID','StoryID','Channel','Preview_Headline',
                    'Channel_Ad_ID','Gender_Targeting','Age_Targeting','Device_Targeting','Interest_Targeting',
