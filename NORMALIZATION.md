@@ -1,7 +1,7 @@
 # NORMALIZATION
 Indeed, it doesn´t exist strict rules on how normalize attributes.  The simplest methodology to do it consists in the transformation of data to center them, eliminating the average value in each attribute, thereafter I scaled them, dividing the attributes by their standard deviation. Now, for an attribute x_i:
 
-Z_i=(x_i-xp)/σ_x 
+Zi=(xi-xp)/σx 
 
 This procedure is often the first stage, when I apply traditional statistical models. It makes sure that the observations have an average of 0 and a standard deviation of 1. Not always, like it happens to many things in Deep Learning, will give good results all the time, therefore, there are some alternatives; here, I will show two popular options:
 
