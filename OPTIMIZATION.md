@@ -1,4 +1,4 @@
-#OPTIMIZATION
+# OPTIMIZATION
 Genetic and evolutionary algorithms, which are known as population-based search algorithms, use a pool of candidate solutions instead of just a single search point. Because of this, population-based methods tend to require more calculations when compared to simpler local methods, although they tend to work better as global optimization methods, quickly finding regions that are interested in the search space.
 
 Population-based methods have the tendency to explore the most distinct regions of the search space, as compared to single-state methods. Therefore, these algorithms can achieve greater diversity in terms of configuration of new ones. The solutions, which can be created not only by changing each individual search point slightly but also by combining attributes related to two (or more) search points.
